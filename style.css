@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: "open sans" ;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    /* background-color: #f0f0f0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.34); 
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#cell1, #cell2, #cell4, #cell5 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#cell3, #cell6 {
+    border-bottom: 2px solid black;
+}
+
+#cell7, #cell8 {
+    border-right: 2px solid black;
+}
+#reset{
+    margin: 20px;
+    background-color: brown;
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    border: 5px solid antiquewhite;
+    border-radius: 15px;
+    cursor: pointer;
+}
